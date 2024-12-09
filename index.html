@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newest Deals on Slickdeals</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        .container {
+            margin: 20px auto;
+            max-width: 800px;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #333;
+            color: white;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        a {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Newest Deals on Slickdeals</h1>
+</header>
+
+<div class="container">
+    <table>
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Price</th>
+                <th>Posted Time</th>
+                <th>Rating</th>
+                <th>Views</th>
+                <th>Comments</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data Rows Go Here -->
+        </tbody>
+    </table>
+</div>
+
+<script>
+    // Example of dynamically adding rows using JavaScript
+    const deals = [
+        {"title": "Refurb Citizen Eco-Drive Men's Chronograph Titanium Watch", "link": "https://ui.slickdeals.net/click?trd=Get%20Deal", "price": "$124.09", "posted_time": "Posted Today", "rating": 4, "views": "476 Views", "comments": "1 Comments"},
+        // Add all other rows here...
+    ];
+
+    const tbody = document.querySelector('tbody');
+
+    deals.forEach(deal => {
+        const row = document.createElement('tr');
+
+        row.innerHTML = `
+            <td><a href="${deal.link}" target="_blank">${deal.title}</a></td>
+            <td>${deal.price}</td>
+            <td>${deal.posted_time}</td>
+            <td>${deal.rating}</td>
+            <td>${deal.views}</td>
+            <td>${deal.comments}</td>
+        `;
+
+        tbody.appendChild(row);
+    });
+</script>
+
+</body>
+</html>
+
+#This html code is helped by Chat-gpt

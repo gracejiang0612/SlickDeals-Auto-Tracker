@@ -12,7 +12,7 @@ Automatically tracks and updates deals from SlickDeals every 2 hours using Pytho
 
 ## Technologies
 
-- Python 3.x
+- Python
 - BeautifulSoup4 for web scraping
 - Pandas for data manipulation
 - Schedule for automated updates

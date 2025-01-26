@@ -23,5 +23,4 @@ Automatically tracks and updates deals from SlickDeals every 2 hours using Pytho
 beautifulsoup4
 pandas
 requests
-schedule
 ```

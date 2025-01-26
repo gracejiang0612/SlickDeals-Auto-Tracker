@@ -8,7 +8,8 @@ Automatically tracks and updates deals from SlickDeals every 2 hours using Pytho
 - Updates deal information every 2 hours
 - Stores deal data in structured format
 - Tracks price changes and availability
-- Easy-to-read output using Pandas DataFrames
+- Easy-to-read output using Pandas 
+- Web interface for viewing deals
 
 ## Technologies
 
@@ -16,6 +17,7 @@ Automatically tracks and updates deals from SlickDeals every 2 hours using Pytho
 - BeautifulSoup4 for web scraping
 - Pandas for data manipulation
 - Schedule for automated updates
+- HTML/CSS for web interface
 
 ## Required Python Packages
 
@@ -24,3 +26,5 @@ beautifulsoup4
 pandas
 requests
 ```
+
+This project is not affiliated with SlickDeals.net. Please respect their robots.txt and terms of service when using this tool. 
